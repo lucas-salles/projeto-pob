@@ -1,11 +1,11 @@
 package fachada;
 import java.util.List;
 
-import dao.DAO;
-import dao.DAOCliente;
-import dao.DAOConta;
-import dao.DAOProduto;
-import dao.DAOTipo;
+import daojpa.DAO;
+import daojpa.DAOCliente;
+import daojpa.DAOConta;
+import daojpa.DAOProduto;
+import daojpa.DAOTipo;
 import modelo.Cliente;
 import modelo.Conta;
 import modelo.Produto;
@@ -36,8 +36,10 @@ public class Fachada {
 	public static Cliente cadastrarCliente(String nome, String cpf)	throws Exception {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nome);
-		if(cliente != null)
+		if(cliente != null) {
+			DAO.rollback();
 			throw new Exception("cadastrar cliente - cliente já cadastrado:" + nome);
+		}
 
 		cliente = new Cliente(nome, cpf);
 		daocliente.create(cliente);
@@ -48,11 +50,15 @@ public class Fachada {
 	public static Conta cadastrarConta(String nomecliente)	throws Exception {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("cadastrar conta - cliente não cadastrado:" + nomecliente);
+		}
 		
-		if(cliente.ultimaContaAtiva() != null)
+		if(cliente.ultimaContaAtiva() != null) {
+			DAO.rollback();
 			throw new Exception("cadastrar conta - cliente com conta aberta:" + nomecliente);
+		}
 		
 		Conta conta = new Conta(cliente);
 		cliente.adicionar(conta);
@@ -66,11 +72,15 @@ public class Fachada {
 		DAO.begin();
 		Produto produto = daoproduto.read(nome);
 		Tipo tipo = daotipo.read(nometipo);
-		if(produto != null)
+		if(produto != null) {
+			DAO.rollback();
 			throw new Exception("cadastrar produto - produto já cadastrado:" + nome);
+		}
 		
-		if(tipo == null)
+		if(tipo == null) {
+			DAO.rollback();
 			throw new Exception("cadastrar produto - tipo não cadastrado:" + nometipo);
+		}
 		
 		produto = new Produto(nome, preco, tipo);
 		tipo.adicionar(produto);
@@ -83,8 +93,10 @@ public class Fachada {
 	public static Tipo cadastrarTipo(String nome) throws Exception {
 		DAO.begin();
 		Tipo tipo = daotipo.read(nome);
-		if(tipo != null)
+		if(tipo != null) {
+			DAO.rollback();
 			throw new Exception("cadastrar tipo - tipo já cadastrado:" + nome);
+		}
 		
 		tipo = new Tipo(nome);
 		daotipo.create(tipo);
@@ -96,15 +108,21 @@ public class Fachada {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
 		Produto produto = daoproduto.read(nomeproduto);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("adicionar produto - cliente não cadastrado:" + nomecliente);
+		}
 		
-		if(produto == null)
+		if(produto == null) {
+			DAO.rollback();
 			throw new Exception("adicionar produto - produto não cadastrado:" + nomeproduto);
+		}
 		
 		Conta conta = cliente.ultimaContaAtiva();
-		if(conta == null)
+		if(conta == null) {
+			DAO.rollback();
 			throw new Exception("adicionar produto - cliente sem conta ativa:" + nomecliente);
+		}
 		
 		conta.adicionar(produto);
 		produto.adicionar(conta);
@@ -117,19 +135,27 @@ public class Fachada {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
 		Produto produto = daoproduto.read(nomeproduto);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("remover produto - cliente não cadastrado:" + nomecliente);
+		}
 		
-		if(produto == null)
+		if(produto == null) {
+			DAO.rollback();
 			throw new Exception("remover produto - produto não cadastrado:" + nomeproduto);
+		}
 		
 		Conta conta = cliente.ultimaContaAtiva();
-		if(conta == null)
+		if(conta == null) {
+			DAO.rollback();
 			throw new Exception("remover produto - cliente sem conta ativa:" + nomecliente);
+		}
 		
 		List<Produto> produtos = conta.getProdutos();
-		if(!produtos.contains(produto))
+		if(!produtos.contains(produto)) {
+			DAO.rollback();
 			throw new Exception("remover produto - cliente não adicionou esse produto:" + nomeproduto);
+		}
 		
 		conta.remover(produto);
 		produto.remover(conta);
@@ -141,12 +167,16 @@ public class Fachada {
 	public static Conta fecharConta(String nomecliente) throws Exception {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("fechar conta - cliente não cadastrado:" + nomecliente);
+		}
 		
 		Conta conta = cliente.ultimaContaAtiva();
-		if(conta == null)
+		if(conta == null) {
+			DAO.rollback();
 			throw new Exception("fechar conta - cliente sem conta ativa:" + nomecliente);
+		}
 		
 		conta.setAtivo(false);
 		daoconta.update(conta);
@@ -157,8 +187,10 @@ public class Fachada {
 	public static void excluirCliente(String nomecliente) throws Exception {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("excluir cliente - cliente não cadastrado:" + nomecliente);
+		}
 		
 		
 		List<Conta> contas = cliente.getContas();
@@ -173,18 +205,6 @@ public class Fachada {
 			daoconta.delete(conta);
 		}
 		
-		/*
-		for(Conta conta : cliente.getContas()) {
-			daoconta.delete(conta);
-			for(Produto produto : conta.getProdutos()) {
-				Produto p = daoproduto.read(produto.getNome());
-				p.remover(conta);
-				daoproduto.update(p);
-			}
-			daoconta.delete(conta);
-		}
-		*/
-		
 		daocliente.delete(cliente);
 		DAO.commit();
 	}
@@ -192,8 +212,10 @@ public class Fachada {
 	public static void excluirProduto(String nomeproduto) throws Exception {
 		DAO.begin();
 		Produto produto = daoproduto.read(nomeproduto);
-		if(produto == null)
+		if(produto == null) {
+			DAO.rollback();
 			throw new Exception("excluir produto - produto não cadastrado:" + nomeproduto);
+		}
 		
 		List<Conta> contas = produto.getContas();
 		for(int i = 0; i < contas.size(); i++) {
@@ -201,14 +223,6 @@ public class Fachada {
 			conta.remover(produto);
 			daoconta.update(conta);
 		}
-		
-		/*
-		for(Conta conta : produto.getContas()) {
-			Conta c = daoconta.read(conta.getId());
-			c.remover(produto);
-			daoconta.update(c);
-		}
-		*/
 		
 		Tipo tipo = produto.getTipo();
 		if(tipo != null) {
@@ -223,8 +237,10 @@ public class Fachada {
 	public static void excluirTipo(String nometipo) throws Exception {
 		DAO.begin();
 		Tipo tipo = daotipo.read(nometipo);
-		if(tipo == null)
+		if(tipo == null) {
+			DAO.rollback();
 			throw new Exception("excluir tipo - tipo não cadastrado:" + nometipo);
+		}
 		
 		for(Produto produto : tipo.getProdutos()) {
 			produto.setTipo(null);
@@ -238,8 +254,10 @@ public class Fachada {
 	public static void alterarCliente(String nomecliente, String novonome) throws Exception {
 		DAO.begin();
 		Cliente cliente = daocliente.read(nomecliente);
-		if(cliente == null)
+		if(cliente == null) {
+			DAO.rollback();
 			throw new Exception("alterar nome do cliente - cliente não cadastrado:" + nomecliente);
+		}
 		
 		cliente.setNome(novonome);
 		daocliente.update(cliente);
@@ -249,8 +267,10 @@ public class Fachada {
 	public static void alterarProduto(String nomeproduto, String novonome) throws Exception {
 		DAO.begin();
 		Produto produto = daoproduto.read(nomeproduto);
-		if(produto == null)
+		if(produto == null) {
+			DAO.rollback();
 			throw new Exception("alterar produto - produto não cadastrado:" + nomeproduto);
+		}
 		
 		produto.setNome(novonome);
 		daoproduto.update(produto);
@@ -261,11 +281,15 @@ public class Fachada {
 		DAO.begin();
 		Produto produto = daoproduto.read(nomeproduto);
 		Tipo tipo = daotipo.read(novotipo);
-		if(produto == null)
+		if(produto == null) {
+			DAO.rollback();
 			throw new Exception("alterar tipo do produto - produto não cadastrado:" + nomeproduto);
+		}
 		
-		if(tipo == null)
+		if(tipo == null) {
+			DAO.rollback();
 			throw new Exception("alterar tipo do produto - tipo não cadastrado:" + novotipo);
+		}
 		
 		Tipo t = produto.getTipo();
 		if(t != null) {
@@ -283,8 +307,10 @@ public class Fachada {
 	public static void alterarTipo(String nometipo, String novonome) throws Exception {
 		DAO.begin();
 		Tipo tipo = daotipo.read(nometipo);
-		if(tipo == null)
+		if(tipo == null) {
+			DAO.rollback();
 			throw new Exception("alterar tipo - tipo não cadastrado:" + nometipo);
+		}
 		
 		tipo.setNome(novonome);
 		daotipo.update(tipo);
@@ -334,7 +360,7 @@ public class Fachada {
 			texto += t + "\n";
 		return texto;
 	}
-	
+	/*
 	public static String consultaClientesPorParteNome(String caracteres) {
 		List<Cliente> result = daocliente.consultaClientesPorParteNome(caracteres);
 		String texto = "";
@@ -389,7 +415,7 @@ public class Fachada {
 				texto +=  x + "\n";
 		return texto;
 	}
-	
+	*/
 	public static List<Produto> getProdutos() {
 		return daoproduto.readAll();
 	}

@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Cliente {
@@ -15,6 +16,7 @@ public class Cliente {
 	private int id;
 	private String nome;
 	private String cpf;
+	@OneToMany(mappedBy="cliente")
 	private List<Conta> contas = new ArrayList<>();
 	
 	public Cliente() {}

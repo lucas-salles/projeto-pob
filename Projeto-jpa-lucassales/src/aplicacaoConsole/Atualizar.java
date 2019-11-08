@@ -14,7 +14,6 @@ public class Atualizar {
 		Fachada.inicializar();
 		atualizar();
 		Fachada.finalizar();
-		System.out.println("\n\naviso: feche sempre o plugin eclipse antes de executar aplicação");
 	}
 
 	public void atualizar(){
@@ -28,6 +27,7 @@ public class Atualizar {
 		catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
+		System.out.println("fim do programa");
 	}
 	
 	//=================================================

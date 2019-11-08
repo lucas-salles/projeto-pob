@@ -14,7 +14,6 @@ public class Listar {
 		Fachada.inicializar();
 		listar();
 		Fachada.finalizar();
-		System.out.println("\n\naviso: feche sempre o plugin eclipse antes de executar aplicação");
 	}
 
 	public void listar(){
@@ -27,6 +26,7 @@ public class Listar {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+		System.out.println("fim do programa");
 	}
 
 	//=================================================

@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Produto {
@@ -15,7 +17,9 @@ public class Produto {
 	private int id;
 	private String nome;
 	private double preco;
+	@ManyToOne
 	private Tipo tipo = null;
+	@ManyToMany
 	private List<Conta> contas = new ArrayList<>();
 	
 	public Produto() {}

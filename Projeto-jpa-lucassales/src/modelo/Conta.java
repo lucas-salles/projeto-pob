@@ -4,10 +4,15 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OrderBy;
+import javax.persistence.OrderColumn;
 
 
 @Entity
@@ -15,10 +20,13 @@ public class Conta  {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;	//autoincrementado
+	@Column(columnDefinition ="TIMESTAMP")
 	private LocalDateTime data = LocalDateTime.now();
 	private double total = 0;
 	private boolean ativo = true;
+	@ManyToOne
 	private Cliente cliente;
+	@ManyToMany(mappedBy="contas")
 	private List<Produto> produtos = new ArrayList<>();
 	
 	public Conta() {}
@@ -97,6 +105,6 @@ public class Conta  {
 	@Override
 	public String toString() {
 		return "Conta [id=" + id + ", data=" + data + ", total=" + total + ", ativo=" + ativo + ", cliente=" + cliente.getNome()
-				+ ", produtos=" + produtos + "]";
+				+ ", produtos=" + produtos.size() + "]";
 	}
 }

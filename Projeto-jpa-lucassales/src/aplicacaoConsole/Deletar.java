@@ -14,11 +14,10 @@ public class Deletar {
 		Fachada.inicializar();
 		deletar();
 		Fachada.finalizar();
-		System.out.println("\n\naviso: feche sempre o plugin eclipse antes de executar aplicação");
 	}
 
 	public void deletar(){
-		System.out.println("Excluindo...");
+		System.out.println("Deletando...");
 		try {
 			Fachada.excluirCliente("joao");
 			Fachada.excluirProduto("bife");
@@ -26,6 +25,7 @@ public class Deletar {
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+		System.out.println("fim do programa");
 	}
 
 	//=================================================
