@@ -173,18 +173,6 @@ public class Fachada {
 			daoconta.delete(conta);
 		}
 		
-		/*
-		for(Conta conta : cliente.getContas()) {
-			daoconta.delete(conta);
-			for(Produto produto : conta.getProdutos()) {
-				Produto p = daoproduto.read(produto.getNome());
-				p.remover(conta);
-				daoproduto.update(p);
-			}
-			daoconta.delete(conta);
-		}
-		*/
-		
 		daocliente.delete(cliente);
 		DAO.commit();
 	}
@@ -201,15 +189,7 @@ public class Fachada {
 			conta.remover(produto);
 			daoconta.update(conta);
 		}
-		
-		/*
-		for(Conta conta : produto.getContas()) {
-			Conta c = daoconta.read(conta.getId());
-			c.remover(produto);
-			daoconta.update(c);
-		}
-		*/
-		
+
 		Tipo tipo = produto.getTipo();
 		if(tipo != null) {
 			tipo.remover(produto);
