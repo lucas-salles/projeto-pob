@@ -360,7 +360,7 @@ public class Fachada {
 			texto += t + "\n";
 		return texto;
 	}
-	/*
+	
 	public static String consultaClientesPorParteNome(String caracteres) {
 		List<Cliente> result = daocliente.consultaClientesPorParteNome(caracteres);
 		String texto = "";
@@ -415,7 +415,7 @@ public class Fachada {
 				texto +=  x + "\n";
 		return texto;
 	}
-	*/
+	
 	public static List<Produto> getProdutos() {
 		return daoproduto.readAll();
 	}

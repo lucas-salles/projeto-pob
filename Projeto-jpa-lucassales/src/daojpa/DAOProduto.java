@@ -22,5 +22,15 @@ public class DAOProduto extends DAO<Produto>{
 			return null;
 		}
 	}
+	
+	public List<Produto> consultaProdutoPorTipo(String tipo) {
+		try{
+			Query q = manager.createQuery("select p from Produto p where p.tipo.nome= :x");
+			q.setParameter("x", tipo);
+			return (List<Produto>) q.getResultList();
+		}catch(NoResultException e){
+			return null;
+		}
+	}
 }
 
