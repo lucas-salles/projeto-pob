@@ -1,67 +1,390 @@
-[EL Fine]: server: 2019-11-09 00:59:34.888--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2019-11-09 00:59:35.09--ServerSession(265119009)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
-[EL Config]: metadata: 2019-11-09 00:59:35.119--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tipo] is being defaulted to: class modelo.Tipo.
-[EL Config]: metadata: 2019-11-09 00:59:35.125--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field contas] is being defaulted to: class modelo.Conta.
-[EL Config]: metadata: 2019-11-09 00:59:35.125--ServerSession(265119009)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Conta] is set to [FIELD].
-[EL Config]: metadata: 2019-11-09 00:59:35.126--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
-[EL Config]: metadata: 2019-11-09 00:59:35.127--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
-[EL Config]: metadata: 2019-11-09 00:59:35.127--ServerSession(265119009)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Tipo] is set to [FIELD].
-[EL Config]: metadata: 2019-11-09 00:59:35.127--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
-[EL Config]: metadata: 2019-11-09 00:59:35.128--ServerSession(265119009)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
-[EL Config]: metadata: 2019-11-09 00:59:35.128--ServerSession(265119009)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field contas] is being defaulted to: class modelo.Conta.
-[EL Config]: metadata: 2019-11-09 00:59:35.129--ServerSession(265119009)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
-[EL Config]: metadata: 2019-11-09 00:59:35.131--ServerSession(265119009)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Produto] is being defaulted to: PRODUTO.
-[EL Config]: metadata: 2019-11-09 00:59:35.148--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
-[EL Config]: metadata: 2019-11-09 00:59:35.149--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-09 00:59:35.149--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.15--ServerSession(265119009)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Conta] is being defaulted to: Conta.
-[EL Config]: metadata: 2019-11-09 00:59:35.15--ServerSession(265119009)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Conta] is being defaulted to: CONTA.
-[EL Config]: metadata: 2019-11-09 00:59:35.151--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [total] is being defaulted to: TOTAL.
-[EL Config]: metadata: 2019-11-09 00:59:35.151--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [ativo] is being defaulted to: ATIVO.
-[EL Config]: metadata: 2019-11-09 00:59:35.151--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
-[EL Config]: metadata: 2019-11-09 00:59:35.152--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.152--ServerSession(265119009)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Tipo] is being defaulted to: Tipo.
-[EL Config]: metadata: 2019-11-09 00:59:35.153--ServerSession(265119009)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Tipo] is being defaulted to: TIPO.
-[EL Config]: metadata: 2019-11-09 00:59:35.153--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-09 00:59:35.154--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.154--ServerSession(265119009)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
-[EL Config]: metadata: 2019-11-09 00:59:35.154--ServerSession(265119009)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Cliente] is being defaulted to: CLIENTE.
-[EL Config]: metadata: 2019-11-09 00:59:35.154--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
-[EL Config]: metadata: 2019-11-09 00:59:35.155--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-11-09 00:59:35.155--ServerSession(265119009)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.165--ServerSession(265119009)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field tipo] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.166--ServerSession(265119009)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [tipo] is being defaulted to: TIPO_ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field contas] is being defaulted to: PRODUTO_CONTA.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field contas] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [contas] is being defaulted to: produtos_ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field contas] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [contas] is being defaulted to: contas_ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-09 00:59:35.178--ServerSession(265119009)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE_ID.
-[EL Info]: 2019-11-09 00:59:35.295--ServerSession(265119009)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
-[EL Fine]: connection: 2019-11-09 00:59:35.441--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-[EL Config]: connection: 2019-11-09 00:59:35.448--ServerSession(265119009)--Connection(649329985)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+[EL Fine]: server: 2019-11-14 17:18:26.732--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-11-14 17:18:26.952--ServerSession(1291286504)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
+[EL Config]: metadata: 2019-11-14 17:18:26.981--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tipo] is being defaulted to: class modelo.Tipo.
+[EL Config]: metadata: 2019-11-14 17:18:26.988--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field contas] is being defaulted to: class modelo.Conta.
+[EL Config]: metadata: 2019-11-14 17:18:26.989--ServerSession(1291286504)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Conta] is set to [FIELD].
+[EL Config]: metadata: 2019-11-14 17:18:26.989--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
+[EL Config]: metadata: 2019-11-14 17:18:26.991--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2019-11-14 17:18:26.991--ServerSession(1291286504)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Tipo] is set to [FIELD].
+[EL Config]: metadata: 2019-11-14 17:18:26.992--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2019-11-14 17:18:26.993--ServerSession(1291286504)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
+[EL Config]: metadata: 2019-11-14 17:18:26.993--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field contas] is being defaulted to: class modelo.Conta.
+[EL Config]: metadata: 2019-11-14 17:18:26.995--ServerSession(1291286504)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2019-11-14 17:18:26.999--ServerSession(1291286504)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Produto] is being defaulted to: PRODUTO.
+[EL Config]: metadata: 2019-11-14 17:18:27.037--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2019-11-14 17:18:27.038--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-14 17:18:27.039--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.039--ServerSession(1291286504)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Conta] is being defaulted to: Conta.
+[EL Config]: metadata: 2019-11-14 17:18:27.039--ServerSession(1291286504)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Conta] is being defaulted to: CONTA.
+[EL Config]: metadata: 2019-11-14 17:18:27.04--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [total] is being defaulted to: TOTAL.
+[EL Config]: metadata: 2019-11-14 17:18:27.04--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [ativo] is being defaulted to: ATIVO.
+[EL Config]: metadata: 2019-11-14 17:18:27.041--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2019-11-14 17:18:27.041--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.041--ServerSession(1291286504)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Tipo] is being defaulted to: Tipo.
+[EL Config]: metadata: 2019-11-14 17:18:27.042--ServerSession(1291286504)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Tipo] is being defaulted to: TIPO.
+[EL Config]: metadata: 2019-11-14 17:18:27.042--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-14 17:18:27.042--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.043--ServerSession(1291286504)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
+[EL Config]: metadata: 2019-11-14 17:18:27.043--ServerSession(1291286504)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Cliente] is being defaulted to: CLIENTE.
+[EL Config]: metadata: 2019-11-14 17:18:27.043--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-11-14 17:18:27.044--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-11-14 17:18:27.044--ServerSession(1291286504)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.059--ServerSession(1291286504)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field tipo] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.06--ServerSession(1291286504)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [tipo] is being defaulted to: TIPO_ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.078--ServerSession(1291286504)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field contas] is being defaulted to: PRODUTO_CONTA.
+[EL Config]: metadata: 2019-11-14 17:18:27.079--ServerSession(1291286504)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field contas] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.079--ServerSession(1291286504)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [contas] is being defaulted to: produtos_ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.079--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field contas] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.079--ServerSession(1291286504)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [contas] is being defaulted to: contas_ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.079--ServerSession(1291286504)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-14 17:18:27.08--ServerSession(1291286504)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE_ID.
+[EL Info]: 2019-11-14 17:18:27.942--ServerSession(1291286504)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
+[EL Fine]: connection: 2019-11-14 17:18:28.13--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-11-14 17:18:28.14--ServerSession(1291286504)--Connection(1427381743)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
 	platform=>PostgreSQLPlatform
 	user name=> "postgres"
 	datasource URL=> "jdbc:postgresql://localhost:5432/restaurante"
 ))
-[EL Config]: connection: 2019-11-09 00:59:35.514--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/restaurante
+[EL Config]: connection: 2019-11-14 17:18:28.195--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/restaurante
 	User: postgres
-	Database: PostgreSQL  Version: 11.4
+	Database: PostgreSQL  Version: 10.7
 	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.1 (build 1206)
-[EL Info]: connection: 2019-11-09 00:59:35.567--ServerSession(265119009)--Thread(Thread[main,5,main])--/file:/C:/Users/Lucas/Documents/TSI P4/POB/Projeto/Projeto-jpa-lucassales/target/classes/_restaurante-eclipselink login successful
-[EL Fine]: sql: 2019-11-09 00:59:35.824--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE NOME LIKE ?
-	bind => [%jo%]
-[EL Fine]: sql: 2019-11-09 00:59:35.838--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT t0.ID, t0.CPF, t0.NOME FROM CLIENTE t0 WHERE ((SELECT COUNT(t1.ID) FROM CONTA t1 WHERE (t1.CLIENTE_ID = t0.ID)) = ?)
-	bind => [3]
-[EL Fine]: sql: 2019-11-09 00:59:35.846--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.CPF, t1.NOME FROM PRODUTO_CONTA t4, TIPO t3, PRODUTO t2, CLIENTE t1, CONTA t0 WHERE ((t3.NOME = ?) AND (((t0.CLIENTE_ID = t1.ID) AND ((t4.contas_ID = t0.ID) AND (t2.ID = t4.produtos_ID))) AND (t3.ID = t2.TIPO_ID)))
-	bind => [whisky]
-[EL Fine]: sql: 2019-11-09 00:59:35.85--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.CPF, t1.NOME FROM CONTA t0, CLIENTE t1 WHERE (((SELECT COUNT(t2.ID) FROM PRODUTO_CONTA t3, PRODUTO t2 WHERE ((t3.contas_ID = t0.ID) AND (t2.ID = t3.produtos_ID))) >= ?) AND (t0.CLIENTE_ID = t1.ID))
-	bind => [2]
-[EL Fine]: sql: 2019-11-09 00:59:35.854--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NOME, t1.PRECO, t1.TIPO_ID FROM TIPO t0, PRODUTO t1 WHERE ((t0.NOME = ?) AND (t0.ID = t1.TIPO_ID))
+[EL Info]: connection: 2019-11-14 17:18:28.264--ServerSession(1291286504)--Thread(Thread[main,5,main])--/file:/Z:/lucas/projeto-pob/Projeto-jpa-lucassales/target/classes/_restaurante-eclipselink login successful
+[EL Fine]: sql: 2019-11-14 17:18:28.324--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE TABLE PRODUTO (ID  SERIAL NOT NULL, NOME VARCHAR(255), PRECO FLOAT, TIPO_ID INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-14 17:18:28.353--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE INDEX INDEX_PRODUTO_nome ON PRODUTO (nome)
+[EL Fine]: sql: 2019-11-14 17:18:28.376--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE TABLE CLIENTE (ID  SERIAL NOT NULL, CPF VARCHAR(255), NOME VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-14 17:18:28.434--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE INDEX INDEX_CLIENTE_nome ON CLIENTE (nome)
+[EL Fine]: sql: 2019-11-14 17:18:28.458--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE TABLE TIPO (ID  SERIAL NOT NULL, NOME VARCHAR(255), PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-14 17:18:28.495--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE TABLE CONTA (ID  SERIAL NOT NULL, ATIVO BOOLEAN, DATA TIMESTAMP, TOTAL FLOAT, CLIENTE_ID INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-14 17:18:28.549--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--CREATE TABLE PRODUTO_CONTA (produtos_ID INTEGER NOT NULL, contas_ID INTEGER NOT NULL, PRIMARY KEY (produtos_ID, contas_ID))
+[EL Fine]: sql: 2019-11-14 17:18:28.569--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_TIPO_ID FOREIGN KEY (TIPO_ID) REFERENCES TIPO (ID)
+[EL Fine]: sql: 2019-11-14 17:18:28.574--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--ALTER TABLE CONTA ADD CONSTRAINT FK_CONTA_CLIENTE_ID FOREIGN KEY (CLIENTE_ID) REFERENCES CLIENTE (ID)
+[EL Fine]: sql: 2019-11-14 17:18:28.578--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--ALTER TABLE PRODUTO_CONTA ADD CONSTRAINT FK_PRODUTO_CONTA_contas_ID FOREIGN KEY (contas_ID) REFERENCES CONTA (ID)
+[EL Fine]: sql: 2019-11-14 17:18:28.581--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--ALTER TABLE PRODUTO_CONTA ADD CONSTRAINT FK_PRODUTO_CONTA_produtos_ID FOREIGN KEY (produtos_ID) REFERENCES PRODUTO (ID)
+[EL Fine]: sql: 2019-11-14 17:18:28.93--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
 	bind => [bebidas]
-[EL Fine]: sql: 2019-11-09 00:59:35.856--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (ID = ?)
-	bind => [1]
-[EL Config]: connection: 2019-11-09 00:59:35.86--ServerSession(265119009)--Connection(1955920234)--Thread(Thread[main,5,main])--disconnect
-[EL Info]: connection: 2019-11-09 00:59:35.861--ServerSession(265119009)--Thread(Thread[main,5,main])--/file:/C:/Users/Lucas/Documents/TSI P4/POB/Projeto/Projeto-jpa-lucassales/target/classes/_restaurante-eclipselink logout successful
-[EL Config]: connection: 2019-11-09 00:59:35.861--ServerSession(265119009)--Connection(649329985)--Thread(Thread[main,5,main])--disconnect
+[EL Fine]: sql: 2019-11-14 17:18:28.946--ClientSession(823575379)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [bebidas]
+[EL Fine]: sql: 2019-11-14 17:18:28.949--ClientSession(823575379)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.966--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [whisky]
+[EL Fine]: sql: 2019-11-14 17:18:28.968--ClientSession(1297189682)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [whisky]
+[EL Fine]: sql: 2019-11-14 17:18:28.969--ClientSession(1297189682)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.973--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [vodka]
+[EL Fine]: sql: 2019-11-14 17:18:28.975--ClientSession(1201454821)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [vodka]
+[EL Fine]: sql: 2019-11-14 17:18:28.976--ClientSession(1201454821)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.979--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [cerveja]
+[EL Fine]: sql: 2019-11-14 17:18:28.98--ClientSession(1107985860)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [cerveja]
+[EL Fine]: sql: 2019-11-14 17:18:28.981--ClientSession(1107985860)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.985--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [frutos do mar]
+[EL Fine]: sql: 2019-11-14 17:18:28.986--ClientSession(939199469)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [frutos do mar]
+[EL Fine]: sql: 2019-11-14 17:18:28.987--ClientSession(939199469)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.99--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [carnes]
+[EL Fine]: sql: 2019-11-14 17:18:28.992--ClientSession(528591360)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [carnes]
+[EL Fine]: sql: 2019-11-14 17:18:28.992--ClientSession(528591360)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:28.997--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [sobremesa]
+[EL Fine]: sql: 2019-11-14 17:18:28.998--ClientSession(1245065720)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO TIPO (NOME) VALUES (?)
+	bind => [sobremesa]
+[EL Fine]: sql: 2019-11-14 17:18:28.999--ClientSession(1245065720)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.003--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [suco]
+[EL Fine]: sql: 2019-11-14 17:18:29.005--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [bebidas]
+[EL Fine]: sql: 2019-11-14 17:18:29.013--ClientSession(932582590)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [suco, 10.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.015--ClientSession(932582590)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.02--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [coca]
+[EL Fine]: sql: 2019-11-14 17:18:29.021--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [bebidas]
+[EL Fine]: sql: 2019-11-14 17:18:29.023--ClientSession(1261764601)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [coca, 10.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.025--ClientSession(1261764601)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.028--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [guaraná]
+[EL Fine]: sql: 2019-11-14 17:18:29.029--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [bebidas]
+[EL Fine]: sql: 2019-11-14 17:18:29.031--ClientSession(1097324923)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [guaraná, 10.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.032--ClientSession(1097324923)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.036--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bourbon]
+[EL Fine]: sql: 2019-11-14 17:18:29.037--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [whisky]
+[EL Fine]: sql: 2019-11-14 17:18:29.038--ClientSession(1337866219)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [bourbon, 100.0, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.039--ClientSession(1337866219)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.042--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [johnnie walker]
+[EL Fine]: sql: 2019-11-14 17:18:29.044--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [whisky]
+[EL Fine]: sql: 2019-11-14 17:18:29.048--ClientSession(302366050)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [johnnie walker, 130.0, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.049--ClientSession(302366050)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.052--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [jack daniels]
+[EL Fine]: sql: 2019-11-14 17:18:29.053--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [whisky]
+[EL Fine]: sql: 2019-11-14 17:18:29.056--ClientSession(1080476785)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [jack daniels, 130.0, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.057--ClientSession(1080476785)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.06--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [smirnoff]
+[EL Fine]: sql: 2019-11-14 17:18:29.062--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [vodka]
+[EL Fine]: sql: 2019-11-14 17:18:29.064--ClientSession(892965953)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [smirnoff, 80.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.065--ClientSession(892965953)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.09--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [absolut]
+[EL Fine]: sql: 2019-11-14 17:18:29.091--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [vodka]
+[EL Fine]: sql: 2019-11-14 17:18:29.093--ClientSession(434610528)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [absolut, 100.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.094--ClientSession(434610528)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.103--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [skol]
+[EL Fine]: sql: 2019-11-14 17:18:29.105--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [cerveja]
+[EL Fine]: sql: 2019-11-14 17:18:29.106--ClientSession(2115628016)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [skol, 7.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.107--ClientSession(2115628016)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.11--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [brahma]
+[EL Fine]: sql: 2019-11-14 17:18:29.111--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [cerveja]
+[EL Fine]: sql: 2019-11-14 17:18:29.112--ClientSession(1548081008)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [brahma, 7.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.113--ClientSession(1548081008)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.116--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [camarão]
+[EL Fine]: sql: 2019-11-14 17:18:29.117--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [frutos do mar]
+[EL Fine]: sql: 2019-11-14 17:18:29.119--ClientSession(1940445711)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [camarão, 20.0, 5]
+[EL Fine]: sql: 2019-11-14 17:18:29.12--ClientSession(1940445711)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.122--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [peixe]
+[EL Fine]: sql: 2019-11-14 17:18:29.124--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [frutos do mar]
+[EL Fine]: sql: 2019-11-14 17:18:29.125--ClientSession(1976752685)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [peixe, 20.0, 5]
+[EL Fine]: sql: 2019-11-14 17:18:29.126--ClientSession(1976752685)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.129--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bife]
+[EL Fine]: sql: 2019-11-14 17:18:29.129--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [carnes]
+[EL Fine]: sql: 2019-11-14 17:18:29.13--ClientSession(674019271)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [bife, 5.0, 6]
+[EL Fine]: sql: 2019-11-14 17:18:29.131--ClientSession(674019271)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.135--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bolo de chocolate]
+[EL Fine]: sql: 2019-11-14 17:18:29.136--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [sobremesa]
+[EL Fine]: sql: 2019-11-14 17:18:29.137--ClientSession(1332691311)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [bolo de chocolate, 10.0, 7]
+[EL Fine]: sql: 2019-11-14 17:18:29.138--ClientSession(1332691311)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.141--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [mousse]
+[EL Fine]: sql: 2019-11-14 17:18:29.142--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME FROM TIPO WHERE (NOME = ?)
+	bind => [sobremesa]
+[EL Fine]: sql: 2019-11-14 17:18:29.143--ClientSession(35984028)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO (NOME, PRECO, TIPO_ID) VALUES (?, ?, ?)
+	bind => [mousse, 8.0, 7]
+[EL Fine]: sql: 2019-11-14 17:18:29.144--ClientSession(35984028)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.147--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.149--ClientSession(951741667)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CLIENTE (CPF, NOME) VALUES (?, ?)
+	bind => [1234, joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.151--ClientSession(951741667)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.153--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [pedro]
+[EL Fine]: sql: 2019-11-14 17:18:29.155--ClientSession(1845517769)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CLIENTE (CPF, NOME) VALUES (?, ?)
+	bind => [1234, pedro]
+[EL Fine]: sql: 2019-11-14 17:18:29.156--ClientSession(1845517769)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.158--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.159--ClientSession(552937500)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CLIENTE (CPF, NOME) VALUES (?, ?)
+	bind => [1234, maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.16--ClientSession(552937500)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.162--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.164--ClientSession(1863953433)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CLIENTE (CPF, NOME) VALUES (?, ?)
+	bind => [1234, joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.165--ClientSession(1863953433)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.168--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [jose]
+[EL Fine]: sql: 2019-11-14 17:18:29.169--ClientSession(447767121)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CLIENTE (CPF, NOME) VALUES (?, ?)
+	bind => [1234, jose]
+[EL Fine]: sql: 2019-11-14 17:18:29.17--ClientSession(447767121)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.172--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.174--ClientSession(2044482328)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.173, 0.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.177--ClientSession(2044482328)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.179--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [pedro]
+[EL Fine]: sql: 2019-11-14 17:18:29.181--ClientSession(762809053)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.181, 0.0, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.182--ClientSession(762809053)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.184--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.186--ClientSession(1360215046)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.185, 0.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.187--ClientSession(1360215046)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.189--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.191--ClientSession(157168588)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.190, 0.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.192--ClientSession(157168588)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.194--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [jose]
+[EL Fine]: sql: 2019-11-14 17:18:29.195--ClientSession(182670350)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.195, 0.0, 5]
+[EL Fine]: sql: 2019-11-14 17:18:29.197--ClientSession(182670350)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.199--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.2--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [suco]
+[EL Fine]: sql: 2019-11-14 17:18:29.203--ClientSession(1513867245)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [10.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.206--ClientSession(1513867245)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [1, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.209--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.21--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [peixe]
+[EL Fine]: sql: 2019-11-14 17:18:29.211--ClientSession(3540494)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [30.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.213--ClientSession(3540494)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [1, 12]
+[EL Fine]: sql: 2019-11-14 17:18:29.215--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.216--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bolo de chocolate]
+[EL Fine]: sql: 2019-11-14 17:18:29.218--ClientSession(872669868)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [40.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.219--ClientSession(872669868)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [1, 14]
+[EL Fine]: sql: 2019-11-14 17:18:29.221--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.222--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [suco]
+[EL Fine]: sql: 2019-11-14 17:18:29.224--ClientSession(1541697437)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [30.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.226--ClientSession(1541697437)--Connection(1427646530)--Thread(Thread[main,5,main])--DELETE FROM PRODUTO_CONTA WHERE ((contas_ID = ?) AND (produtos_ID = ?))
+	bind => [1, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.228--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [pedro]
+[EL Fine]: sql: 2019-11-14 17:18:29.229--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bourbon]
+[EL Fine]: sql: 2019-11-14 17:18:29.23--ClientSession(664186542)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [100.0, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.231--ClientSession(664186542)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [2, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.234--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.235--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [brahma]
+[EL Fine]: sql: 2019-11-14 17:18:29.237--ClientSession(275563320)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [7.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.237--ClientSession(275563320)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [3, 10]
+[EL Fine]: sql: 2019-11-14 17:18:29.24--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.241--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bife]
+[EL Fine]: sql: 2019-11-14 17:18:29.242--ClientSession(139947936)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [12.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.243--ClientSession(139947936)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [3, 13]
+[EL Fine]: sql: 2019-11-14 17:18:29.246--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.247--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [guaraná]
+[EL Fine]: sql: 2019-11-14 17:18:29.248--ClientSession(998062648)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [22.0, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.249--ClientSession(998062648)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [3, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.251--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.252--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [bourbon]
+[EL Fine]: sql: 2019-11-14 17:18:29.254--ClientSession(279566689)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [100.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.255--ClientSession(279566689)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [4, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.257--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.257--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [coca]
+[EL Fine]: sql: 2019-11-14 17:18:29.259--ClientSession(1825419935)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [110.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.26--ClientSession(1825419935)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [4, 2]
+[EL Fine]: sql: 2019-11-14 17:18:29.262--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.263--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [mousse]
+[EL Fine]: sql: 2019-11-14 17:18:29.265--ClientSession(820537534)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [118.0, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.266--ClientSession(820537534)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [4, 15]
+[EL Fine]: sql: 2019-11-14 17:18:29.268--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.27--ClientSession(473153915)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET ATIVO = ? WHERE (ID = ?)
+	bind => [false, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.272--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [maria]
+[EL Fine]: sql: 2019-11-14 17:18:29.273--ClientSession(1827171553)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET ATIVO = ? WHERE (ID = ?)
+	bind => [false, 3]
+[EL Fine]: sql: 2019-11-14 17:18:29.275--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joana]
+[EL Fine]: sql: 2019-11-14 17:18:29.277--ClientSession(1690101810)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET ATIVO = ? WHERE (ID = ?)
+	bind => [false, 4]
+[EL Fine]: sql: 2019-11-14 17:18:29.279--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.28--ClientSession(941836856)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.280, 0.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.281--ClientSession(941836856)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.283--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.285--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [smirnoff]
+[EL Fine]: sql: 2019-11-14 17:18:29.286--ClientSession(1415289182)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [80.0, 6]
+[EL Fine]: sql: 2019-11-14 17:18:29.287--ClientSession(1415289182)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [6, 7]
+[EL Fine]: sql: 2019-11-14 17:18:29.289--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.29--ClientSession(1160850402)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET ATIVO = ? WHERE (ID = ?)
+	bind => [false, 6]
+[EL Fine]: sql: 2019-11-14 17:18:29.292--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.294--ClientSession(1688470144)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO CONTA (ATIVO, DATA, TOTAL, CLIENTE_ID) VALUES (?, ?, ?, ?)
+	bind => [true, 2019-11-14T17:18:29.293, 0.0, 1]
+[EL Fine]: sql: 2019-11-14 17:18:29.295--ClientSession(1688470144)--Connection(1427646530)--Thread(Thread[main,5,main])--select lastval()
+[EL Fine]: sql: 2019-11-14 17:18:29.297--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.298--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, NOME, PRECO, TIPO_ID FROM PRODUTO WHERE (NOME = ?)
+	bind => [johnnie walker]
+[EL Fine]: sql: 2019-11-14 17:18:29.3--ClientSession(950698351)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET TOTAL = ? WHERE (ID = ?)
+	bind => [130.0, 7]
+[EL Fine]: sql: 2019-11-14 17:18:29.301--ClientSession(950698351)--Connection(1427646530)--Thread(Thread[main,5,main])--INSERT INTO PRODUTO_CONTA (contas_ID, produtos_ID) VALUES (?, ?)
+	bind => [7, 5]
+[EL Fine]: sql: 2019-11-14 17:18:29.304--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--SELECT ID, CPF, NOME FROM CLIENTE WHERE (NOME = ?)
+	bind => [joao]
+[EL Fine]: sql: 2019-11-14 17:18:29.306--ClientSession(1127338375)--Connection(1427646530)--Thread(Thread[main,5,main])--UPDATE CONTA SET ATIVO = ? WHERE (ID = ?)
+	bind => [false, 7]
+[EL Config]: connection: 2019-11-14 17:18:29.308--ServerSession(1291286504)--Connection(1427646530)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-11-14 17:18:29.309--ServerSession(1291286504)--Thread(Thread[main,5,main])--/file:/Z:/lucas/projeto-pob/Projeto-jpa-lucassales/target/classes/_restaurante-eclipselink logout successful
+[EL Config]: connection: 2019-11-14 17:18:29.309--ServerSession(1291286504)--Connection(1427381743)--Thread(Thread[main,5,main])--disconnect
