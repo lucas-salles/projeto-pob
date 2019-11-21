@@ -15,7 +15,7 @@ public class DAOConta  extends DAO<Conta>{
 	public Conta read (Object chave){
 		try{
 			int id = (Integer) chave;
-			Query q = manager.createQuery("select p from Conta p where p.id= '" + id +"'");
+			Query q = manager.createQuery("select c from Conta c where c.id= '" + id +"'");
 			return (Conta) q.getSingleResult();
 
 		}catch(NoResultException e){

@@ -14,7 +14,7 @@ public class DAOTipo extends DAO<Tipo>{
 	public Tipo read(Object chave){
 		try{
 			String nome = (String) chave;
-			Query q = manager.createQuery("select p from Tipo p where p.nome= '" + nome +"'");
+			Query q = manager.createQuery("select t from Tipo t where t.nome= '" + nome +"'");
 			return (Tipo) q.getSingleResult();
 			
 		}catch(NoResultException e){

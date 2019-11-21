@@ -17,7 +17,7 @@ public class DAOCliente extends DAO<Cliente>{
 	public Cliente read(Object chave){
 		try{
 			String nome = (String) chave;
-			Query q = manager.createQuery("select p from Cliente p where p.nome= '" + nome +"'");
+			Query q = manager.createQuery("select c from Cliente c where c.nome= '" + nome +"'");
 			return (Cliente) q.getSingleResult();
 			
 		}catch(NoResultException e){
@@ -28,7 +28,7 @@ public class DAOCliente extends DAO<Cliente>{
 	public Cliente readByCpf (Object chave) {
 		try {
 			String cpf = (String) chave;
-			Query q = manager.createQuery("select p from Cliente p where p.cpf= '" + cpf +"'");
+			Query q = manager.createQuery("select c from Cliente c where c.cpf= '" + cpf +"'");
 			return (Cliente) q.getSingleResult();
 		} catch(NoResultException e) {
 			return null;
