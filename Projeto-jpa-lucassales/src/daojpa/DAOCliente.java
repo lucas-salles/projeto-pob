@@ -43,19 +43,19 @@ public class DAOCliente extends DAO<Cliente>{
 	
 	public  List<Cliente> consultaClientesPorParteNome(String caracteres) {
 		Query q = manager.createQuery
-				("select p from Cliente p where p.nome like '%"+caracteres+"%' ");
+				("select c from Cliente c where c.nome like '%"+caracteres+"%' ");
 		return (List<Cliente>) q.getResultList();
 	}
 	
 	public List<Cliente> consultaClientesNContas(int n) {
-		Query q = manager.createQuery("select p from Cliente p where SIZE(p.contas)= :x");
+		Query q = manager.createQuery("select c from Cliente c where SIZE(c.contas)= :x");
 		q.setParameter("x", n);
 		return (List<Cliente>) q.getResultList();
 	}
 	
 	public List<Cliente> consultaClientesPorTipo(String tipo) {
 		try{
-			Query q = manager.createQuery("select p from Cliente p join p.contas t join t.produtos u where u.tipo.nome= :x");
+			Query q = manager.createQuery("select cl from Cliente cl join cl.contas co join co.produtos p where p.tipo.nome= :x");
 			q.setParameter("x", tipo);
 			return (List<Cliente>) q.getResultList();
 		}catch(NoResultException e){
@@ -65,7 +65,7 @@ public class DAOCliente extends DAO<Cliente>{
 	
 	public List<Cliente> consultaClientesNProdutos(int n) {
 		try{
-			Query q = manager.createQuery("select p from Cliente p join p.contas t where SIZE(t.produtos)>= :x");
+			Query q = manager.createQuery("select cl from Cliente cl join cl.contas co where SIZE(co.produtos)>= :x");
 			q.setParameter("x", n);
 			return (List<Cliente>) q.getResultList();
 		}catch(NoResultException e){
