@@ -11,6 +11,7 @@ import javax.persistence.Index;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 @Entity
 @Table(indexes= @Index(columnList="nome"))
@@ -24,6 +25,8 @@ public class Produto {
 	private Tipo tipo = null;
 	@ManyToMany
 	private List<Conta> contas = new ArrayList<>();
+	@Version
+	private int versao;
 	
 	public Produto() {}
 	
