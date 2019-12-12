@@ -14,7 +14,6 @@ public class Consultar {
 		Fachada.inicializar();
 		consultar();
 		Fachada.finalizar();
-		System.out.println("\n\naviso: feche sempre o plugin eclipse antes de executar aplicação");
 	}
 
 	public void consultar() {
