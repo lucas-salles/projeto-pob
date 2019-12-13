@@ -9,8 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 @Entity
-@NoSql(dataFormat=DataFormatType.MAPPED)
+@NoSql(dataType="order")
 public class Tipo {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -42,7 +45,7 @@ public class Tipo {
 		return null;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 

@@ -13,8 +13,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 @Entity
-@NoSql(dataFormat=DataFormatType.MAPPED)
+@NoSql(dataType="order")
 public class Produto {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -50,15 +53,15 @@ public class Produto {
 		contas.remove(c);
 	}
 	
-	public Conta localizarConta(int id) {
+	public Conta localizarConta(String id) {
 		for(Conta c : contas) {
-			if(c.getId() == id)
+			if(c.getId().equals(id))
 				return c;
 		}
 		return null;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 

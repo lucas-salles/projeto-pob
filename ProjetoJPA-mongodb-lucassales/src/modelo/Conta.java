@@ -14,9 +14,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OrderBy;
 import javax.persistence.OrderColumn;
 
+import org.eclipse.persistence.nosql.annotations.Field;
+import org.eclipse.persistence.nosql.annotations.NoSql;
+
 
 @Entity
-@NoSql(dataFormat=DataFormatType.MAPPED)
+@NoSql(dataType="order")
 public class Conta  {
 	@Id
 	@GeneratedValue
@@ -55,12 +58,8 @@ public class Conta  {
 		return null;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 	
 	public LocalDateTime getData() {
