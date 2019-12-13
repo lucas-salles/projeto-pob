@@ -17,7 +17,7 @@ import org.eclipse.persistence.nosql.annotations.NoSql;
 @NoSql(dataFormat=DataFormatType.MAPPED)
 public class Tipo {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue
 	@Field(name="_id")		//chave
 	private String id;
 	private String nome;
