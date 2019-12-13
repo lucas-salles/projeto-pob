@@ -9,11 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
 import org.eclipse.persistence.nosql.annotations.Field;
 import org.eclipse.persistence.nosql.annotations.NoSql;
 
 @Entity
-@NoSql(dataType="order")
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Tipo {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

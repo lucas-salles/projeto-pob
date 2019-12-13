@@ -13,11 +13,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
 import org.eclipse.persistence.nosql.annotations.Field;
 import org.eclipse.persistence.nosql.annotations.NoSql;
 
 @Entity
-@NoSql(dataType="order")
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Produto {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

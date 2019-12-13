@@ -11,11 +11,12 @@ import javax.persistence.Index;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
 import org.eclipse.persistence.nosql.annotations.Field;
 import org.eclipse.persistence.nosql.annotations.NoSql;
 
 @Entity
-@NoSql(dataType="order")
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Cliente {
 	@Id
 	@GeneratedValue

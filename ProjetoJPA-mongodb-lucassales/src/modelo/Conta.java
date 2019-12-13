@@ -14,12 +14,13 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OrderBy;
 import javax.persistence.OrderColumn;
 
+import org.eclipse.persistence.nosql.annotations.DataFormatType;
 import org.eclipse.persistence.nosql.annotations.Field;
 import org.eclipse.persistence.nosql.annotations.NoSql;
 
 
 @Entity
-@NoSql(dataType="order")
+@NoSql(dataFormat=DataFormatType.MAPPED)
 public class Conta  {
 	@Id
 	@GeneratedValue
