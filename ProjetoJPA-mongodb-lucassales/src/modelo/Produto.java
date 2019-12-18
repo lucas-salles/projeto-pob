@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
@@ -28,7 +29,7 @@ public class Produto {
 	private double preco;
 	@ManyToOne
 	private Tipo tipo = null;
-	@ManyToMany
+	@OneToMany
 	private List<Conta> contas = new ArrayList<>();
 	@Version
 	private int versao;

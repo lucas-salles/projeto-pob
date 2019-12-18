@@ -1,30 +1,168 @@
-[EL Fine]: server: 2019-12-13 00:02:53.405--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2019-12-13 00:02:53.561--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
-[EL Config]: metadata: 2019-12-13 00:02:53.595--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tipo] is being defaulted to: class modelo.Tipo.
-[EL Config]: metadata: 2019-12-13 00:02:53.598--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field contas] is being defaulted to: class modelo.Conta.
-[EL Config]: metadata: 2019-12-13 00:02:53.601--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Conta] is set to [FIELD].
-[EL Config]: metadata: 2019-12-13 00:02:53.602--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
-[EL Config]: metadata: 2019-12-13 00:02:53.603--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
-[EL Config]: metadata: 2019-12-13 00:02:53.603--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Tipo] is set to [FIELD].
-[EL Config]: metadata: 2019-12-13 00:02:53.604--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
-[EL Config]: metadata: 2019-12-13 00:02:53.604--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
-[EL Config]: metadata: 2019-12-13 00:02:53.605--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field contas] is being defaulted to: class modelo.Conta.
-[EL Config]: metadata: 2019-12-13 00:02:53.605--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
-[EL Config]: metadata: 2019-12-13 00:02:53.619--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
-[EL Config]: metadata: 2019-12-13 00:02:53.62--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-12-13 00:02:53.621--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
-[EL Config]: metadata: 2019-12-13 00:02:53.622--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Conta] is being defaulted to: Conta.
-[EL Config]: metadata: 2019-12-13 00:02:53.622--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [total] is being defaulted to: TOTAL.
-[EL Config]: metadata: 2019-12-13 00:02:53.623--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [ativo] is being defaulted to: ATIVO.
-[EL Config]: metadata: 2019-12-13 00:02:53.623--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
-[EL Config]: metadata: 2019-12-13 00:02:53.624--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Tipo] is being defaulted to: Tipo.
-[EL Config]: metadata: 2019-12-13 00:02:53.624--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-12-13 00:02:53.624--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
-[EL Config]: metadata: 2019-12-13 00:02:53.625--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
-[EL Config]: metadata: 2019-12-13 00:02:53.625--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-12-13 00:02:53.635--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field tipo] is being defaulted to: _id.
-[EL Config]: metadata: 2019-12-13 00:02:53.635--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [tipo] is being defaulted to: TIPO__id.
-[EL Config]: metadata: 2019-12-13 00:02:53.635--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: _id.
-[EL Config]: metadata: 2019-12-13 00:02:53.636--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE__id.
-[EL Config]: metadata: 2019-12-13 00:02:53.651--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field produtos] is being defaulted to: _id.
-[EL Config]: metadata: 2019-12-13 00:02:53.652--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [produtos] is being defaulted to: PRODUTOS__id.
+[EL Fine]: server: 2019-12-17 22:20:21.884--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-12-17 22:20:22.136--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Produto] is set to [FIELD].
+[EL Config]: metadata: 2019-12-17 22:20:22.183--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tipo] is being defaulted to: class modelo.Tipo.
+[EL Config]: metadata: 2019-12-17 22:20:22.19--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field contas] is being defaulted to: class modelo.Conta.
+[EL Config]: metadata: 2019-12-17 22:20:22.195--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Conta] is set to [FIELD].
+[EL Config]: metadata: 2019-12-17 22:20:22.195--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
+[EL Config]: metadata: 2019-12-17 22:20:22.197--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2019-12-17 22:20:22.197--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Tipo] is set to [FIELD].
+[EL Config]: metadata: 2019-12-17 22:20:22.198--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field produtos] is being defaulted to: class modelo.Produto.
+[EL Config]: metadata: 2019-12-17 22:20:22.199--ServerSession(188576144)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
+[EL Config]: metadata: 2019-12-17 22:20:22.201--ServerSession(188576144)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field contas] is being defaulted to: class modelo.Conta.
+[EL Config]: metadata: 2019-12-17 22:20:22.204--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2019-12-17 22:20:22.221--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2019-12-17 22:20:22.223--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-12-17 22:20:22.223--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [versao] is being defaulted to: VERSAO.
+[EL Config]: metadata: 2019-12-17 22:20:22.224--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Conta] is being defaulted to: Conta.
+[EL Config]: metadata: 2019-12-17 22:20:22.225--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [total] is being defaulted to: TOTAL.
+[EL Config]: metadata: 2019-12-17 22:20:22.226--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [ativo] is being defaulted to: ATIVO.
+[EL Config]: metadata: 2019-12-17 22:20:22.227--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [data] is being defaulted to: DATA.
+[EL Config]: metadata: 2019-12-17 22:20:22.227--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Tipo] is being defaulted to: Tipo.
+[EL Config]: metadata: 2019-12-17 22:20:22.228--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-12-17 22:20:22.228--ServerSession(188576144)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
+[EL Config]: metadata: 2019-12-17 22:20:22.23--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-12-17 22:20:22.23--ServerSession(188576144)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-12-17 22:20:22.243--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field tipo] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.244--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [tipo] is being defaulted to: TIPO__id.
+[EL Config]: metadata: 2019-12-17 22:20:22.262--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field contas] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.262--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [contas] is being defaulted to: CONTAS__id.
+[EL Config]: metadata: 2019-12-17 22:20:22.262--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.262--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE__id.
+[EL Config]: metadata: 2019-12-17 22:20:22.262--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field produtos] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.263--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [produtos] is being defaulted to: PRODUTOS__id.
+[EL Config]: metadata: 2019-12-17 22:20:22.264--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field produtos] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.264--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [produtos] is being defaulted to: PRODUTOS__id.
+[EL Config]: metadata: 2019-12-17 22:20:22.264--ServerSession(188576144)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field contas] is being defaulted to: _id.
+[EL Config]: metadata: 2019-12-17 22:20:22.264--ServerSession(188576144)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [contas] is being defaulted to: CONTAS__id.
+[EL Info]: 2019-12-17 22:20:22.31--ServerSession(188576144)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.5.v20191016-ea124dd158
+[EL Config]: connection: 2019-12-17 22:20:22.312--ServerSession(188576144)--Connection(611572016)--Thread(Thread[main,5,main])--connecting(EISLogin(
+	platform=> MongoPlatform
+	user name=> ""
+	MongoConnectionSpec()
+))
+[EL Config]: connection: 2019-12-17 22:20:23.094--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Connected: 
+	User: 
+	Database: 4.0.11  Version: 4.0.11
+[EL Info]: connection: 2019-12-17 22:20:23.136--ServerSession(188576144)--Thread(Thread[main,5,main])--/file:/C:/Users/Lucas/Documents/TSI P4/POB/projeto-pob/ProjetoJPA-mongodb-lucassales/target/classes/_restaurante login successful
+[EL Fine]: sql: 2019-12-17 22:20:23.336--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CLIENTE}
+	input => [DatabaseRecord()]
+[EL Fine]: sql: 2019-12-17 22:20:23.375--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CONTA}
+	input => [DatabaseRecord()]
+[EL Fine]: sql: 2019-12-17 22:20:23.384--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF9708A2D408706684F69A0)]
+[EL Fine]: sql: 2019-12-17 22:20:23.388--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F6992]
+[EL Fine]: sql: 2019-12-17 22:20:23.389--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF9708A2D408706684F69A2)]
+[EL Fine]: sql: 2019-12-17 22:20:23.391--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F6994]
+[EL Fine]: sql: 2019-12-17 22:20:23.395--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F6998)]
+[EL Fine]: sql: 2019-12-17 22:20:23.396--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F698F]
+[EL Fine]: sql: 2019-12-17 22:20:23.398--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF9708A2D408706684F699E)]
+[EL Fine]: sql: 2019-12-17 22:20:23.4--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F6991]
+[EL Fine]: sql: 2019-12-17 22:20:23.402--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF9708A2D408706684F69A1)]
+[EL Fine]: sql: 2019-12-17 22:20:23.403--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F6993]
+[EL Fine]: sql: 2019-12-17 22:20:23.405--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F6997)]
+[EL Fine]: sql: 2019-12-17 22:20:23.406--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F698E]
+[EL Fine]: sql: 2019-12-17 22:20:23.411--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F6998)]
+[EL Fine]: sql: 2019-12-17 22:20:23.413--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F6996)]
+[EL Fine]: sql: 2019-12-17 22:20:23.414--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF9708A2D408706684F69A3)]
+[EL Fine]: sql: 2019-12-17 22:20:23.417--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F699B)]
+[EL Fine]: sql: 2019-12-17 22:20:23.419--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [5DF970892D408706684F6990]
+[EL Fine]: sql: 2019-12-17 22:20:23.42--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord(
+	PRODUTO._id => 5DF970892D408706684F6999)]
+[EL Fine]: sql: 2019-12-17 22:20:23.433--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CLIENTE}
+	input => [DatabaseRecord(
+	CLIENTE.NOME => joao)]
+[EL Fine]: sql: 2019-12-17 22:20:23.435--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CONTA}
+	input => [DatabaseRecord(
+	CONTA._id => 5DF9708A2D408706684F69A9)]
+[EL Fine]: sql: 2019-12-17 22:20:23.437--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CONTA}
+	input => [DatabaseRecord(
+	CONTA._id => 5DF9708A2D408706684F69AE)]
+[EL Fine]: sql: 2019-12-17 22:20:23.439--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=CONTA}
+	input => [DatabaseRecord(
+	CONTA._id => 5DF9708A2D408706684F69AF)]
+[EL Fine]: sql: 2019-12-17 22:20:23.442--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=PRODUTO}
+	input => [DatabaseRecord()]
+[EL Fine]: sql: 2019-12-17 22:20:23.446--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--Executing MappedInteraction()
+	spec => null
+	properties => {mongo.operation=FIND, mongo.collection=TIPO}
+	input => [DatabaseRecord()]
+[EL Config]: connection: 2019-12-17 22:20:23.447--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-12-17 22:20:23.448--ServerSession(188576144)--Thread(Thread[main,5,main])--/file:/C:/Users/Lucas/Documents/TSI P4/POB/projeto-pob/ProjetoJPA-mongodb-lucassales/target/classes/_restaurante logout successful
+[EL Config]: connection: 2019-12-17 22:20:23.448--ServerSession(188576144)--Connection(69329761)--Thread(Thread[main,5,main])--disconnect
